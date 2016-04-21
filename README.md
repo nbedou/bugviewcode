@@ -6,12 +6,39 @@ Bug sphinx: `viewcode` cannot parse a Python file using the matrix multiplicator
 
 Install dev versions of pygments and sphinx:
 
-
     pip install hg+https://bitbucket.org/birkenfeld/pygments-main
     pip install git+https://github.com/sphinx-doc/sphinx
 
     pip install -e . 
 
+Refresh PATH:
+
+    source deactive
+    source activate bugviewcode
+
+Run doc:
+
+    cd doc
+    make clean && make html
+
+Error obtained:
+
+    File "/home/nicolas/anaconda3/envs/bugviewcode/lib/python3.5/site-packages/pygments/filters/__init__.py", line 196, in filter
+    
+    pygments.filters.ErrorToken: @
+
+Full trace in log file.
+
+Debug
+=====
+
+`pygments` is able to parse '@' without problem:
+
+    $pygmentize -V
+    Pygments version 2.2a0, (c) 2006-2015 by Georg Brandl.
+
+    $pygmentize -l python3 bugviewcode/__init__.py
+    (no error)
 
 `conda list`:
 
