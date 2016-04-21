@@ -14,9 +14,9 @@
 #   
 #   highlighting module code... [100%] bugviewcode
 # Loaded extensions:
-#   alabaster (0.7.7) from /home/nicolas/anaconda3/envs/bugviewcode/lib/python3.5/site-packages/alabaster/__init__.py
-#   sphinx.ext.viewcode (1.5a0) from /home/nicolas/anaconda3/envs/bugviewcode/lib/python3.5/site-packages/sphinx/ext/viewcode.py
 #   sphinx.ext.autodoc (1.5a0) from /home/nicolas/anaconda3/envs/bugviewcode/lib/python3.5/site-packages/sphinx/ext/autodoc.py
+#   sphinx.ext.viewcode (1.5a0) from /home/nicolas/anaconda3/envs/bugviewcode/lib/python3.5/site-packages/sphinx/ext/viewcode.py
+#   alabaster (0.7.7) from /home/nicolas/anaconda3/envs/bugviewcode/lib/python3.5/site-packages/alabaster/__init__.py
 Traceback (most recent call last):
   File "/home/nicolas/anaconda3/envs/bugviewcode/lib/python3.5/site-packages/sphinx/cmdline.py", line 244, in main
     app.build(opts.force_all, filenames)
