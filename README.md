@@ -9,6 +9,10 @@ Install dev versions of pygments and sphinx:
     pip install hg+https://bitbucket.org/birkenfeld/pygments-main
     pip install git+https://github.com/sphinx-doc/sphinx
 
+Clone and install test package:
+
+    git clone https://github.com/nbedou/bugviewcode.git
+    cd bugviewcode
     pip install -e . 
 
 Refresh PATH:
@@ -16,7 +20,7 @@ Refresh PATH:
     source deactive
     source activate bugviewcode
 
-Run doc:
+Try to build doc:
 
     cd doc
     make clean && make html
