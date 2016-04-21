@@ -1,0 +1,59 @@
+# Sphinx version: 1.5a0
+# Python version: 3.5.1 (CPython)
+# Docutils version: 0.12 release
+# Jinja2 version: 2.8
+# Last messages:
+#   done
+#   writing output... [ 33%] api/bugviewcode
+#   writing output... [ 66%] api/modules
+#   writing output... [100%] index
+#   
+#   generating indices...
+#   genindex
+#   py-modindex
+#   
+#   highlighting module code... [100%] bugviewcode
+# Loaded extensions:
+#   alabaster (0.7.7) from /home/nicolas/anaconda3/envs/bugviewcode/lib/python3.5/site-packages/alabaster/__init__.py
+#   sphinx.ext.viewcode (1.5a0) from /home/nicolas/anaconda3/envs/bugviewcode/lib/python3.5/site-packages/sphinx/ext/viewcode.py
+#   sphinx.ext.autodoc (1.5a0) from /home/nicolas/anaconda3/envs/bugviewcode/lib/python3.5/site-packages/sphinx/ext/autodoc.py
+Traceback (most recent call last):
+  File "/home/nicolas/anaconda3/envs/bugviewcode/lib/python3.5/site-packages/sphinx/cmdline.py", line 244, in main
+    app.build(opts.force_all, filenames)
+  File "/home/nicolas/anaconda3/envs/bugviewcode/lib/python3.5/site-packages/sphinx/application.py", line 289, in build
+    self.builder.build_update()
+  File "/home/nicolas/anaconda3/envs/bugviewcode/lib/python3.5/site-packages/sphinx/builders/__init__.py", line 251, in build_update
+    'out of date' % len(to_build))
+  File "/home/nicolas/anaconda3/envs/bugviewcode/lib/python3.5/site-packages/sphinx/builders/__init__.py", line 325, in build
+    self.finish()
+  File "/home/nicolas/anaconda3/envs/bugviewcode/lib/python3.5/site-packages/sphinx/builders/html.py", line 463, in finish
+    self.finish_tasks.add_task(self.gen_additional_pages)
+  File "/home/nicolas/anaconda3/envs/bugviewcode/lib/python3.5/site-packages/sphinx/util/parallel.py", line 40, in add_task
+    res = task_func()
+  File "/home/nicolas/anaconda3/envs/bugviewcode/lib/python3.5/site-packages/sphinx/builders/html.py", line 488, in gen_additional_pages
+    for pagename, context, template in pagelist:
+  File "/home/nicolas/anaconda3/envs/bugviewcode/lib/python3.5/site-packages/sphinx/ext/viewcode.py", line 146, in collect_pages
+    highlighted = highlighter.highlight_block(code, lexer, linenos=False)
+  File "/home/nicolas/anaconda3/envs/bugviewcode/lib/python3.5/site-packages/sphinx/highlighting.py", line 148, in highlight_block
+    raise exc
+  File "/home/nicolas/anaconda3/envs/bugviewcode/lib/python3.5/site-packages/sphinx/highlighting.py", line 138, in highlight_block
+    hlsource = highlight(source, lexer, formatter)
+  File "/home/nicolas/anaconda3/envs/bugviewcode/lib/python3.5/site-packages/pygments/__init__.py", line 85, in highlight
+    return format(lex(code, lexer), formatter, outfile)
+  File "/home/nicolas/anaconda3/envs/bugviewcode/lib/python3.5/site-packages/pygments/__init__.py", line 64, in format
+    formatter.format(tokens, realoutfile)
+  File "/home/nicolas/anaconda3/envs/bugviewcode/lib/python3.5/site-packages/pygments/formatter.py", line 95, in format
+    return self.format_unencoded(tokensource, outfile)
+  File "/home/nicolas/anaconda3/envs/bugviewcode/lib/python3.5/site-packages/pygments/formatters/html.py", line 850, in format_unencoded
+    for t, piece in source:
+  File "/home/nicolas/anaconda3/envs/bugviewcode/lib/python3.5/site-packages/pygments/formatters/html.py", line 690, in _wrap_div
+    for tup in inner:
+  File "/home/nicolas/anaconda3/envs/bugviewcode/lib/python3.5/site-packages/pygments/formatters/html.py", line 708, in _wrap_pre
+    for tup in inner:
+  File "/home/nicolas/anaconda3/envs/bugviewcode/lib/python3.5/site-packages/pygments/formatters/html.py", line 727, in _format_lines
+    for ttype, value in tokensource:
+  File "/home/nicolas/anaconda3/envs/bugviewcode/lib/python3.5/site-packages/pygments/filter.py", line 20, in _apply
+    for token in filter_.filter(lexer, stream):
+  File "/home/nicolas/anaconda3/envs/bugviewcode/lib/python3.5/site-packages/pygments/filters/__init__.py", line 196, in filter
+    raise self.exception(value)
+pygments.filters.ErrorToken: @
